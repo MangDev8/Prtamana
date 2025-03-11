@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertamana Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selamat Datang di Pertamana Web</h1>
+    <p id="chat-text">Ada yang bisa saya bantu?</p>
+    <button onclick="startListening()">🎤 Bicara</button>
+    <input type="text" id="textInput" placeholder="Ketik di sini...">
+    <button onclick="sendText()">Kirim</button>
+    
+    <p id="total-harga"></p> <!-- Total Harga -->
+    
+    <div id="payment-options" style="display: none;">
+        <p>Pilih metode pembayaran:</p>
+        <button onclick="choosePayment('tunai')">Tunai</button>
+        <button onclick="choosePayment('non-tunai')">Non-Tunai</button>
+    </div>
+
+    <div id="struk" style="display: none;">
+        <h2>Struk Pembelian</h2>
+        <p id="struk-text"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
