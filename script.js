@@ -32,6 +32,12 @@ function sendText() {
 function processMessage(text) {
   let response = "Maaf, saya tidak mengerti.";
   
+  
+  if (text.includes("perkenalan") || text.includes("siapa kamu")) {
+  response = "halo nama saya D Ai yang mengatur semua kepentingan di pertamana bisa dibilang otak dari segala otak nya Bensin!";
+  
+  
+  
   if (text.includes("korupsi patra niaga") || text.includes("korup")) {
     response = "Nah iya, kurang ajar banget kalian korupsi! Rakyat sengsara, aduhh masbro menyala! Indonesia penuh orang korup!";
   } else if (text.includes("halo") || text.includes("hai")) {
